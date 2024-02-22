@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecellgu/static/css/main.9964e834.css",
-    "main.js": "/ecellgu/static/js/main.dc74e46e.js",
+    "main.js": "/ecellgu/static/js/main.2b2a371a.js",
     "static/media/team_group_photo.svg": "/ecellgu/static/media/team_group_photo.09690267a1408461c857378688b6e33c.svg",
     "static/media/l_component.mp4": "/ecellgu/static/media/l_component.96a3b6f4e3c609b9caad.mp4",
     "static/media/nishant.png": "/ecellgu/static/media/nishant.b0f21d32ee3b723f3ca8.png",
@@ -58,10 +58,10 @@
     "static/media/closeBtn.svg": "/ecellgu/static/media/closeBtn.0ff51dc6a92bb3afb66f775554af7e09.svg",
     "static/media/mouseLine.svg": "/ecellgu/static/media/mouseLine.71afdb9ae422c8c004ec57e7a70680c2.svg",
     "main.9964e834.css.map": "/ecellgu/static/css/main.9964e834.css.map",
-    "main.dc74e46e.js.map": "/ecellgu/static/js/main.dc74e46e.js.map"
+    "main.2b2a371a.js.map": "/ecellgu/static/js/main.2b2a371a.js.map"
   },
   "entrypoints": [
     "static/css/main.9964e834.css",
-    "static/js/main.dc74e46e.js"
+    "static/js/main.2b2a371a.js"
   ]
 }
