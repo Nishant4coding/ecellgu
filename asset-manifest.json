@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/ecellgu/static/css/main.9964e834.css",
-    "main.js": "/ecellgu/static/js/main.2b2a371a.js",
+    "main.js": "/ecellgu/static/js/main.52bc6aa1.js",
     "static/media/team_group_photo.svg": "/ecellgu/static/media/team_group_photo.09690267a1408461c857378688b6e33c.svg",
     "static/media/l_component.mp4": "/ecellgu/static/media/l_component.96a3b6f4e3c609b9caad.mp4",
-    "static/media/nishant.png": "/ecellgu/static/media/nishant.b0f21d32ee3b723f3ca8.png",
-    "static/media/abhinna.png": "/ecellgu/static/media/abhinna.1d3c11645faf12b981f8.png",
-    "static/media/anshu.png": "/ecellgu/static/media/anshu.a41a3aa758e436864e9d.png",
-    "static/media/ayush.png": "/ecellgu/static/media/ayush.ee39665b5ca2668e9ed3.png",
-    "static/media/aastha.png": "/ecellgu/static/media/aastha.95945c1f47aa6660b8dc.png",
-    "static/media/avanya.png": "/ecellgu/static/media/avanya.122e329ee7cd183cb188.png",
-    "static/media/shivansh.png": "/ecellgu/static/media/shivansh.d74fe13dc6139b9fe08d.png",
     "static/media/blank.png": "/ecellgu/static/media/blank.e0c9354d0da1a24513b4.png",
     "static/media/Intro-video.mp4": "/ecellgu/static/media/Intro-video.f8bc6eef8c03b594abd8.mp4",
     "static/media/bg-why.png": "/ecellgu/static/media/bg-why.d5ce9f1057034d2a46d3.png",
     "static/media/Pitchme_1.jpg": "/ecellgu/static/media/Pitchme_1.cc8e51fc0525108cc6b9.jpg",
     "static/media/Pitchme_2.jpg": "/ecellgu/static/media/Pitchme_2.a4312285ac490ea3d2f6.jpg",
     "static/media/Pitchme_3.jpg": "/ecellgu/static/media/Pitchme_3.941f807b296683500785.jpg",
+    "static/media/abhinna.png": "/ecellgu/static/media/abhinna.727cf529b5efc89a6123.png",
+    "static/media/aastha.png": "/ecellgu/static/media/aastha.dc4165123bb24d3c2332.png",
+    "static/media/anshu.png": "/ecellgu/static/media/anshu.ae0dd292a8c7203646ed.png",
+    "static/media/nishant.png": "/ecellgu/static/media/nishant.e528dc1ee5c30794ddb2.png",
+    "static/media/ayush.png": "/ecellgu/static/media/ayush.c002a48a837347cdd007.png",
+    "static/media/shivansh.png": "/ecellgu/static/media/shivansh.50df3020b066f96020bb.png",
+    "static/media/avanya.png": "/ecellgu/static/media/avanya.631d10dc9eb62806f071.png",
     "static/media/launchPad-bg.png": "/ecellgu/static/media/launchPad-bg.a376185272edeab156f2.png",
     "static/media/logo.svg": "/ecellgu/static/media/logo.2232b451832df499f34e8273e92bebad.svg",
     "static/media/heroImg.png": "/ecellgu/static/media/heroImg.47a2a5432c0ba97dcc61.png",
@@ -58,10 +58,10 @@
     "static/media/closeBtn.svg": "/ecellgu/static/media/closeBtn.0ff51dc6a92bb3afb66f775554af7e09.svg",
     "static/media/mouseLine.svg": "/ecellgu/static/media/mouseLine.71afdb9ae422c8c004ec57e7a70680c2.svg",
     "main.9964e834.css.map": "/ecellgu/static/css/main.9964e834.css.map",
-    "main.2b2a371a.js.map": "/ecellgu/static/js/main.2b2a371a.js.map"
+    "main.52bc6aa1.js.map": "/ecellgu/static/js/main.52bc6aa1.js.map"
   },
   "entrypoints": [
     "static/css/main.9964e834.css",
-    "static/js/main.2b2a371a.js"
+    "static/js/main.52bc6aa1.js"
   ]
 }
