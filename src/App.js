@@ -5,6 +5,7 @@ import Avirat from './Pages/Avirat';
 function App() {
   return (
     <div className="App">
+          {/* <BrowserRouter> */}
           <BrowserRouter  basename={window.location.pathname || ''}>
 
         <Routes>
