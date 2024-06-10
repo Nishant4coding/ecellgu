@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
           {/* <BrowserRouter> */}
-          <BrowserRouter  basename={window.location.pathname || ''}>
+          <BrowserRouter>
 
         <Routes>
           <Route path='/' element={<Home/>}/>
