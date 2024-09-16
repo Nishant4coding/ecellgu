@@ -11,28 +11,28 @@ import Event from "../Components/Event";
 import pitch1 from "../Assets/Pitchme_1.jpg";
 import pitch2 from "../Assets/Pitchme_2.jpg";
 import pitch3 from "../Assets/Pitchme_3.jpg";
-import launchPadBg from "../Assets/launchPad-bg.png";
+// import launchPadBg from "../Assets/launchPad-bg.png";
 import startUpBg from "../Assets/start-up-bg.png";
-import ProfileCard from "../Components/ProfileCard";
-import memberTushar from "../Assets/member-1.png";
-import memberAnanya from "../Assets/member-2.png";
-import memberPriyanshu from "../Assets/member-0.png";
-import memberAthrav from "../Assets/member-3.png";
-import memberVishal from "../Assets/member-4.png";
-import memberShreyansh from "../Assets/member-5.png";
-import memberVansh from "../Assets/member-6.png";
-import menberRishabh from "../Assets/member-10.png";
-import memberSaksham from "../Assets/member-11.png";
-import memberAastha from "../Assets/aastha.png";
-import memberNishant from "../Assets/nishant.png";
-import memberAnshu from "../Assets/anshu.png";
-import memberAyush from "../Assets/ayush.png";
-import memberShivansh from "../Assets/shivansh.png";
-import memberAbhinna from "../Assets/abhinna.png";
-import memberAvanya from "../Assets/avanya.png";
-import dummy from "../Assets/blank.png";
-import Raj from "../Assets/rajsir.png";
-import Aradhana from "../Assets/member.png";
+// import ProfileCard from "../Components/ProfileCard";
+// import memberTushar from "../Assets/member-1.png";
+// import memberAnanya from "../Assets/member-2.png";
+// import memberPriyanshu from "../Assets/member-0.png";
+// import memberAthrav from "../Assets/member-3.png";
+// import memberVishal from "../Assets/member-4.png";
+// import memberShreyansh from "../Assets/member-5.png";
+// import memberVansh from "../Assets/member-6.png";
+// import menberRishabh from "../Assets/member-10.png";
+// import memberSaksham from "../Assets/member-11.png";
+// import memberAastha from "../Assets/aastha.png";
+// import memberNishant from "../Assets/nishant.png";
+// import memberAnshu from "../Assets/anshu.png";
+// import memberAyush from "../Assets/ayush.png";
+// import memberShivansh from "../Assets/shivansh.png";
+// import memberAbhinna from "../Assets/abhinna.png";
+// import memberAvanya from "../Assets/avanya.png";
+// import dummy from "../Assets/blank.png";
+// import Raj from "../Assets/rajsir.png";
+// import Aradhana from "../Assets/member.png";
 import { TypeAnimation } from "react-type-animation";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
@@ -388,7 +388,7 @@ const Home = () => {
 
 
       {/*Section-4 (Our teams) starting*/}
-      <div className="w-screen pb-20 mb-40" id="Team">
+      {/* <div className="w-screen pb-20 mb-40" id="Team">
         <div className="uppercase text-3xl mt-16 font-semibold">
           <p>
             Our <span className="text-[#f9c922]">Team</span>{" "}
@@ -570,7 +570,7 @@ const Home = () => {
             </Fade>
           </div>
         </div>
-      </div>
+      </div> */}
       {/*Section-4 Ending*/}
 <div id="Contact">
       <Footer />
