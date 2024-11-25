@@ -259,7 +259,7 @@ const Home = () => {
         <div className="hidden xl:flex items-center justify-center ">
           <img src={startUpBg} alt="bg" />
         </div>
-        <div className="md:absolute  top-20 flex flex-col justify-center items-center">
+        <div className="top-20 flex flex-col justify-center items-center">
           <div className="uppercase text-3xl mt-16 font-semibold">
             <p>
               <span className="text-[#f9c922]">STARTUP</span> COMMUNITY
