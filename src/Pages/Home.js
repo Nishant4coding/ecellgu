@@ -294,7 +294,7 @@ const Home = () => {
 
             <Button
               title={"JOIN STARTUP COMMUNITY"}
-              link={"https://bit.ly/3CTTaWl"}
+              link={"http://bit.ly/4fHyjXm"}
               hideOnSmall={false}
             />
 
