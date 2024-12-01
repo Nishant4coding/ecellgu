@@ -56,7 +56,7 @@ const Footer = () => {
             <div className="flex flex-col gap-6 mt-4">
               <p className="flex gap-2 items-center">
                 <img src={phone} alt="phone" className="w-[15px] mt-1" />
-                (406) 555-0120
+                8051163017, 7290089542
               </p>
               <p className="flex gap-2 items-center">
                 <img src={mail} alt="phone" className="w-[15px] mt-1" />

@@ -294,7 +294,7 @@ const Home = () => {
 
             <Button
               title={"JOIN STARTUP COMMUNITY"}
-              link={"https://bit.ly/3CTTaWl"}
+              link={"http://bit.ly/4fHyjXm"}
               hideOnSmall={false}
             />
 
@@ -323,6 +323,9 @@ const Home = () => {
         <div className="uppercase text-3xl mt-16 font-semibold">
           <p>
             <span className="text-[#f9c922]">Our</span> Events
+          </p>
+          <p>
+            <span className="text-[#f9c922]">2022</span> - 2023
           </p>
         </div>
         <div className="w-[90%] mx-auto md:my-36">
@@ -361,12 +364,81 @@ const Home = () => {
             isOpp={false}
           />
         </div>
+        <div className="gradient-div md:w-[40rem] md:h-[40rem] rounded-full absolute top-[30%] sm:left-[10%] md:left-[20%] lg:left-[30%]" />
+      </div>
+      <div className=" relative mt-16 shadow-2xl" id="Events">
+        <div className="uppercase text-3xl mt-16 font-semibold">
+          <p>
+            <span className="text-[#f9c922]">2023</span> - 2024
+          </p>
+        </div>
+        <div className="w-[90%] mx-auto md:my-36">
+          <Event
+            eventTitle="Law meet AI"
+            eventDesc="At the Entrepreneurship Cell, innovation and compliance are at the core of fostering successful startups. This dynamic event featured engaging discussions on how Artificial Intelligence is transforming legal frameworks and businesses. Dr. Rodney D. Ryder led an interactive workshop where participants learned about intellectual property rights, regulatory compliance, and AI-powered solutions in the legal domain. The event included live case studies, group discussions, and a Q&A session, leaving attendees with a robust understanding of legal strategies for startups."
+            imgOne={pitch1}
+            imgTwo={pitch2}
+            imgThree={pitch3}
+            isOpp={false}
+          />
+        </div>
         <div className="w-[90%] mx-auto my-36">
           <EventR
-            eventTitle="E-summit (Comming Soon!)"
-            eventDesc="Considering the recent hype around the start-up culture in country and spirit amongst college students regarding the same, E-CELL Galgotias has planned an event which shall address all their queries and provide a platform for those who are a part of this community."
-            paraTwo="The Summit brings together the speakers that are the best breed of entrepreneurs, innovators, venture capitalists, business model creators, government representatives, consultants, policy-makers, academicians, support groups, business coaches and business practitioners to present and discuss innovation and success under the aegis of entrepreneurship for Small and Medium Businesses as they recount their learning and experiences, share their insights and practices that have enriched their ventures."
-            extendDescWidth={true}
+            eventTitle="E-talk 1"
+            eventDesc="As part of the E-Talk series, this session combined inspiration and practical guidance. Yatinder Singh shared his remarkable journey of resilience, offering tips on overcoming personal and professional challenges. Fit Minds Singha delved into how mindfulness and mental fitness can enhance decision-making and productivity in entrepreneurship. Attendees actively participated in an engaging dialogue about balancing mental well-being with entrepreneurial demands. The event concluded with a fitness-oriented activity, leaving participants energized and motivated."
+            isOpp={false}
+            // bgImg={launchPadBg}
+            // extendDescWidth={true}
+            // isCentered={true}
+            imgOne={pitch1}
+            imgTwo={pitch2}
+            imgThree={pitch3}
+          />
+        </div>
+        <div className="w-[90%] mx-auto md:my-36">
+          <Event
+            eventTitle="EAD"
+            eventDesc="EAD Noida 2023 was a flagship event that brought together some of India’s most successful entrepreneurs to inspire and mentor the next generation. The event featured keynote speeches, interactive sessions, and fireside chats covering a range of topics such as scaling businesses, navigating challenges, and embracing innovation. Attendees had the opportunity to network with leaders from companies like Info Edge, Kuku FM, Pesto Tech, Sirona Hygiene, and AstroTalk. The event concluded with an open forum where participants posed questions and received valuable advice, leaving with actionable insights and inspiration."
+            imgOne={pitch1}
+            imgTwo={pitch2}
+            imgThree={pitch3}
+            isOpp={false}
+          />
+        </div>
+        <div className="w-[90%] mx-auto my-36">
+          <EventR
+            eventTitle="Meta AI certification program"
+            eventDesc="This exclusive Meta Certification Program was a hands-on learning experience where participants explored the nuances of digital branding, marketing, and analytics. Led by industry experts, the program featured interactive workshops, live demonstrations, and personalized feedback sessions. Participants developed strategies for building a strong online presence, leveraging social media platforms, and driving engagement. The program concluded with a certification ceremony, equipping attendees with skills and credentials to excel in the competitive startup ecosystem."
+            isOpp={false}
+            // bgImg={launchPadBg}
+            // extendDescWidth={true}
+            // isCentered={true}
+            imgOne={pitch1}
+            imgTwo={pitch2}
+            imgThree={pitch3}
+          />
+        </div>
+        <div className="w-[90%] mx-auto md:my-36">
+          <Event
+            eventTitle="E-talk 2"
+            eventDesc="This session explored the rapidly evolving world of fintech and its impact on global industries. Rahul Pal, a leading fintech expert, discussed blockchain innovations, digital payments, and financial inclusion strategies. Attendees participated in engaging discussions and case studies, gaining actionable insights into navigating the fintech ecosystem. The event’s highlight was a collaborative brainstorming session where participants pitched fintech-based solutions to real-world problems, fostering innovation and teamwork."
+            imgOne={pitch1}
+            imgTwo={pitch2}
+            imgThree={pitch3}
+            isOpp={false}
+          />
+        </div>
+        <div className="w-[90%] mx-auto my-36">
+          <EventR
+            eventTitle="Pitch Me 2.0"
+            eventDesc="Taking the momentum from the first edition, Pitch Me: Edition 2 was designed to elevate entrepreneurial skills. Participants worked on refining their business models, enhancing presentation strategies, and addressing real-world market challenges. The expert panel provided actionable critiques, helping participants create pitches that resonated with investors and stakeholders. This event marked a step forward in fostering innovation and building investor-ready startups, offering a competitive yet nurturing environment for aspiring founders.This edition introduced advanced frameworks for pitching and market strategy development, guided by the same expert panel of Mr. Khalid Wani, Ms. Bahu, Ms. Trina Das, and Dr. Vishal Gandhi. The event empowered participants to think critically, develop market-fit solutions, and pitch confidently, showcasing their potential to disrupt industries."
+            isOpp={false}
+            // bgImg={launchPadBg}
+            // extendDescWidth={true}
+            // isCentered={true}
+            imgOne={pitch1}
+            imgTwo={pitch2}
+            imgThree={pitch3}
           />
         </div>
         <div className="gradient-div md:w-[40rem] md:h-[40rem] rounded-full absolute top-[30%] sm:left-[10%] md:left-[20%] lg:left-[30%]" />
