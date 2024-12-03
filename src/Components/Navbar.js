@@ -24,7 +24,6 @@ const Navbar = () => {
         </li>
         <li className="  font-[500] hover:text-[#F9C922] transition-colors delay-200 ease-in">
           <a href="#Events">Our Events</a>
-          
         </li>
         <li className="  font-[500] hover:text-[#F9C922] transition-colors delay-200 ease-in">
           <a href="#Team">Our Team</a>
@@ -36,7 +35,7 @@ const Navbar = () => {
       <div className="flex gap-14">
         <Button
           title={"JOIN STARTUP COMMUNITY"}
-          link={"https://bit.ly/3CTTaWl"}
+          link={"http://bit.ly/4fHyjXm"}
           hideOnSmall={true}
         />
         <img

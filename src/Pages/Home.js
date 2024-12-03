@@ -1,104 +1,107 @@
 import React, { useEffect, useRef } from "react";
+import heroImg from "../Assets/heroImg.png";
 import mouseIcon from "../Assets/mouseIcon.svg";
 import mouseLine from "../Assets/mouseLine.svg";
-import heroImg from "../Assets/heroImg.png";
-import Navbar from "../Components/Navbar";
-import rocketPath from "../Assets/rocketPath.svg";
-import rocket from "../Assets/rocket.svg";
-import Footer from "../Components/Footer";
-import Links from "../Components/Links";
-import Event from "../Components/Event";
 import pitch1 from "../Assets/Pitchme_1.jpg";
 import pitch2 from "../Assets/Pitchme_2.jpg";
 import pitch3 from "../Assets/Pitchme_3.jpg";
-// import launchPadBg from "../Assets/launchPad-bg.png";
+import rocket from "../Assets/rocket.svg";
+import rocketPath from "../Assets/rocketPath.svg";
+import Event from "../Components/Event";
+import Footer from "../Components/Footer";
+import Links from "../Components/Links";
+import Navbar from "../Components/Navbar";
 import startUpBg from "../Assets/start-up-bg.png";
-// import ProfileCard from "../Components/ProfileCard";
-// import memberTushar from "../Assets/member-1.png";
-// import memberAnanya from "../Assets/member-2.png";
-// import memberPriyanshu from "../Assets/member-0.png";
-// import memberAthrav from "../Assets/member-3.png";
-// import memberVishal from "../Assets/member-4.png";
-// import memberShreyansh from "../Assets/member-5.png";
-// import memberVansh from "../Assets/member-6.png";
-// import menberRishabh from "../Assets/member-10.png";
-// import memberSaksham from "../Assets/member-11.png";
-// import memberAastha from "../Assets/aastha.png";
-// import memberNishant from "../Assets/nishant.png";
-// import memberAnshu from "../Assets/anshu.png";
-// import memberAyush from "../Assets/ayush.png";
-// import memberShivansh from "../Assets/shivansh.png";
-// import memberAbhinna from "../Assets/abhinna.png";
-// import memberAvanya from "../Assets/avanya.png";
-// import dummy from "../Assets/blank.png";
-// import Raj from "../Assets/rajsir.png";
-// import Aradhana from "../Assets/member.png";
-import { TypeAnimation } from "react-type-animation";
+import ProfileCard from "../Components/ProfileCard";
+import abhinn from "../Assets/abhinn.png";
+import pime1 from "../Assets/pitchme2Img1.JPG";
+import pime2 from "../Assets/pitchme2Img2.jpeg";
+import pime3 from "../Assets/pitchme2Img3.JPG";
+import meta1 from "../Assets/meta1.JPG";
+import meta2 from "../Assets/meta2.JPG";
+import meta3 from "../Assets/meta3.JPG";
+import law1 from "../Assets/law1.JPG";
+import law2 from "../Assets/law2.JPG";
+import law3 from "../Assets/law3.JPG";
+import ead1 from "../Assets/ead1.JPG";
+import ead2 from "../Assets/ead2.JPG";
+import ead3 from "../Assets/ead3.JPG";
+import etalk2_1 from "../Assets/etalk2-1.JPG";
+import etalk2_2 from "../Assets/etalk2-2.JPG";
+import etalk2_3 from "../Assets/etalk2-3.JPG";
+import astha from "../Assets/astha.png";
+import amish from "../Assets/amish.png";
+import ankur from "../Assets/ankur.png";
+import kamal from "../Assets/kamal.png";
+import anshu from "../Assets/anshu.png";
+import piyush from "../Assets/piyush.png";
+import shaivy from "../Assets/shaivy.png";
+import shreeshant from "../Assets/shreeshant.png";
+import tanisqa from "../Assets/tanisqa.png";
+import ujjawal from "../Assets/ujjawal.png";
+import umang from "../Assets/umang.png";
+import Aradhana from "../Assets/member.png";
+import { useState } from "react";
 import Fade from "react-reveal/Fade";
 import Flip from "react-reveal/Flip";
+import { TypeAnimation } from "react-type-animation";
 import Button from "../Components/Button";
-import { useState } from "react";
-import EventR from "../Components/Event_R";
 import DummyButton from "../Components/Dummy_Button";
+import EventR from "../Components/Event_R";
 
 const Home = () => {
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
 
-    const [count1, setCount1] = useState(0);
-    const [count2, setCount2] = useState(0);
-    
-  
-    const sectionRef = useRef();
-    const [sectionVisible, setSectionVisible] = useState(false);
-  
-    useEffect(() => {
-      function counter(id, start, end, duration, updateFunction) {
-        let current = start;
-        const range = end - start;
-        const increment = end > start ? 1 : -1;
-        const step = Math.abs(Math.floor(duration / range));
-  
-        function updateCount() {
-          if (current !== end) {
-            current += increment;
-            updateFunction(current);
-            requestAnimationFrame(updateCount);
+  const sectionRef = useRef();
+  const [sectionVisible, setSectionVisible] = useState(false);
+
+  useEffect(() => {
+    function counter(id, start, end, duration, updateFunction) {
+      let current = start;
+      const range = end - start;
+      const increment = end > start ? 1 : -1;
+      const step = Math.abs(Math.floor(duration / range));
+
+      function updateCount() {
+        if (current !== end) {
+          current += increment;
+          updateFunction(current);
+          requestAnimationFrame(updateCount);
+        }
+      }
+
+      updateCount();
+    }
+
+    if (sectionVisible) {
+      counter("count1", 0, 100, 1000, setCount1);
+      counter("count2", 0, 500, 1000, setCount2);
+    }
+  }, [sectionVisible]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setSectionVisible(true);
           }
-        }
-  
-        updateCount();
-      }
-  
-      if (sectionVisible) {
-        counter("count1", 0, 100, 1000, setCount1);
-        counter("count2", 0, 500, 1000, setCount2);
-      }
-    }, [sectionVisible]);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setSectionVisible(true);
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
-  
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
       if (sectionRef.current) {
-        observer.observe(sectionRef.current);
+        observer.unobserve(sectionRef.current);
       }
-  
-      return () => {
-        if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
-        }
-      };
-    }, [sectionRef]);
-  
-
-
+    };
+  }, [sectionRef]);
 
   const [visible, setVisible] = useState(false);
   const toggleVisible = () => {
@@ -199,7 +202,6 @@ const Home = () => {
         </div>
       </div>
       {/*Section-1 Ending*/}
-
       {/*Section-2 (AboutUs) Starting*/}
       <div className="h-max  relative" id="About">
         <div className="uppercase text-3xl mt-16 font-semibold">
@@ -259,7 +261,7 @@ const Home = () => {
         <div className="hidden xl:flex items-center justify-center ">
           <img src={startUpBg} alt="bg" />
         </div>
-        <div className="top-20 flex flex-col justify-center items-center">
+        <div className="lg:absolute top-20 flex flex-col justify-center items-center">
           <div className="uppercase text-3xl mt-16 font-semibold">
             <p>
               <span className="text-[#f9c922]">STARTUP</span> COMMUNITY
@@ -298,13 +300,15 @@ const Home = () => {
               hideOnSmall={false}
             />
 
-            <div className="flex flex-row mt-20 gap-10 " ref={sectionRef}>
+            <div
+              className="flex lg:flex-row flex-col mt-20 gap-10 "
+              ref={sectionRef}
+            >
               <DummyButton
                 title={`${count1}+ Startups`}
                 link={"https://bit.ly/3CTTaWl"}
                 radius="lg"
                 hideOnSmall={false}
-                
               />
               <DummyButton
                 title={`${count2}+ Members`}
@@ -317,7 +321,6 @@ const Home = () => {
         </div>
       </div>
       {/*Start-up community Section ending*/}
-
       {/*Section-3 (Events) starting*/}
       <div className=" relative mt-16 shadow-2xl" id="Events">
         <div className="uppercase text-3xl mt-16 font-semibold">
@@ -376,9 +379,9 @@ const Home = () => {
           <Event
             eventTitle="Law meet AI"
             eventDesc="At the Entrepreneurship Cell, innovation and compliance are at the core of fostering successful startups. This dynamic event featured engaging discussions on how Artificial Intelligence is transforming legal frameworks and businesses. Dr. Rodney D. Ryder led an interactive workshop where participants learned about intellectual property rights, regulatory compliance, and AI-powered solutions in the legal domain. The event included live case studies, group discussions, and a Q&A session, leaving attendees with a robust understanding of legal strategies for startups."
-            imgOne={pitch1}
-            imgTwo={pitch2}
-            imgThree={pitch3}
+            imgOne={law1}
+            imgTwo={law2}
+            imgThree={law3}
             isOpp={false}
           />
         </div>
@@ -399,9 +402,9 @@ const Home = () => {
           <Event
             eventTitle="EAD"
             eventDesc="EAD Noida 2023 was a flagship event that brought together some of India’s most successful entrepreneurs to inspire and mentor the next generation. The event featured keynote speeches, interactive sessions, and fireside chats covering a range of topics such as scaling businesses, navigating challenges, and embracing innovation. Attendees had the opportunity to network with leaders from companies like Info Edge, Kuku FM, Pesto Tech, Sirona Hygiene, and AstroTalk. The event concluded with an open forum where participants posed questions and received valuable advice, leaving with actionable insights and inspiration."
-            imgOne={pitch1}
-            imgTwo={pitch2}
-            imgThree={pitch3}
+            imgOne={ead1}
+            imgTwo={ead2}
+            imgThree={ead3}
             isOpp={false}
           />
         </div>
@@ -413,18 +416,18 @@ const Home = () => {
             // bgImg={launchPadBg}
             // extendDescWidth={true}
             // isCentered={true}
-            imgOne={pitch1}
-            imgTwo={pitch2}
-            imgThree={pitch3}
+            imgOne={meta1}
+            imgTwo={meta2}
+            imgThree={meta3}
           />
         </div>
         <div className="w-[90%] mx-auto md:my-36">
           <Event
             eventTitle="E-talk 2"
             eventDesc="This session explored the rapidly evolving world of fintech and its impact on global industries. Rahul Pal, a leading fintech expert, discussed blockchain innovations, digital payments, and financial inclusion strategies. Attendees participated in engaging discussions and case studies, gaining actionable insights into navigating the fintech ecosystem. The event’s highlight was a collaborative brainstorming session where participants pitched fintech-based solutions to real-world problems, fostering innovation and teamwork."
-            imgOne={pitch1}
-            imgTwo={pitch2}
-            imgThree={pitch3}
+            imgOne={etalk2_1}
+            imgTwo={etalk2_2}
+            imgThree={etalk2_3}
             isOpp={false}
           />
         </div>
@@ -436,216 +439,197 @@ const Home = () => {
             // bgImg={launchPadBg}
             // extendDescWidth={true}
             // isCentered={true}
-            imgOne={pitch1}
-            imgTwo={pitch2}
-            imgThree={pitch3}
+            imgOne={pime1}
+            imgTwo={pime2}
+            imgThree={pime3}
           />
         </div>
         <div className="gradient-div md:w-[40rem] md:h-[40rem] rounded-full absolute top-[30%] sm:left-[10%] md:left-[20%] lg:left-[30%]" />
       </div>
       {/*Section-3 Ending */}
-
-
       {/* Past Speaker Section */}
+      <div className="h-max relative" id="Speakers"></div>
+      {/* Section-4 (Our teams) starting */}
+      {
+        <div className="w-screen pb-20 mb-40" id="Team">
+          <div className="uppercase text-3xl mt-16 font-semibold">
+            <p>
+              Our <span className="text-[#f9c922]">Team</span>{" "}
+            </p>
+          </div>
+          <div className="flex flex-col gap-y-24 mt-24 w-[80%] mx-auto">
+            <div className="flex lg:flex-row flex-col gap-40 items-center justify-center mb-40">
+              <div>
+                <p className="text-md lg:text-xl text-[#f9c922] py-5">
+                  <i>Under the guidance of</i>
+                </p>
+                <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[60%] mx-auto">
+                  <Fade bottom>
+                    <ProfileCard
+                      img={Aradhana}
+                      name={"Aradhana Galgotia"}
+                      role={""}
+                      linkedinLink={
+                        "https://www.linkedin.com/company/entrepreneurship-cell-galgotias-university/"
+                      }
+                      instaLink={"https://instagram.com/ecellgu"}
+                    />
+                  </Fade>
+                </div>
+              </div>
 
-      <div className="h-max relative" id="Speakers">
-       
-            </div>
-
-
-
-
-
-
-
-
-      {/*Section-4 (Our teams) starting*/}
-      {/* <div className="w-screen pb-20 mb-40" id="Team">
-        <div className="uppercase text-3xl mt-16 font-semibold">
-          <p>
-            Our <span className="text-[#f9c922]">Team</span>{" "}
-          </p>
-        </div>
-        <div className="flex flex-col gap-y-24 mt-24 w-[80%] mx-auto">
-          <div className="flex lg:flex-row flex-col gap-40 items-center justify-center mb-40">
-            <div>
-              <p className="text-md lg:text-xl text-[#f9c922] py-5">
-                <i>Under the guidance of</i>
-              </p>
-              <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[60%] mx-auto">
-                <Fade bottom>
-                  <ProfileCard
-                    img={Aradhana}
-                    name={"Aradhana Galgotia"}
-                    role={""}
-                    linkedinLink={
-                      "https://www.linkedin.com/company/entrepreneurship-cell-galgotias-university/"
-                    }
-                    instaLink={
-                      "https://instagram.com/ecellgu"
-                    }
-                  />
-                </Fade>
+              <div>
+                <p className="text-md lg:text-xl  text-[#f9c922] py-5">
+                  <i>Under the mentorship of</i>
+                </p>
+                <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[60%] mx-auto">
+                  <Fade bottom>
+                    <ProfileCard
+                      img={kamal}
+                      name={"Kamal Kishore Malhotra"}
+                      role={""}
+                      linkedinLink={
+                        "https://www.linkedin.com/in/kamal-kishor-malhotra-bb76a221a"
+                      }
+                      instaLink={"https://instagram.com/ecellgu"}
+                    />
+                  </Fade>
+                </div>
               </div>
             </div>
 
-            <div>
-              <p className="text-md lg:text-xl  text-[#f9c922] py-5">
-                <i>Under the mentorship of</i>
-              </p>
-              <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[60%] mx-auto">
-                <Fade bottom>
-                  <ProfileCard
-                    img={Raj}
-                    name={"Raj Singh Bhati"}
-                    role={""}
-                    linkedinLink={
-                      "https://www.linkedin.com/company/entrepreneurship-cell-galgotias-university/"
-                    }
-                    instaLink={
-                      "https://instagram.com/ecellgu"
-                    }
-                  />
-                </Fade>
-              </div>
+            <div className="flex flex-col lg:gap-4 gap-10 lg:flex-row justify-center items-center mb-40">
+              <Fade bottom>
+                <ProfileCard
+                  img={astha}
+                  name={"Aastha bajaj"}
+                  role={"President"}
+                  linkedinLink={
+                    "https://www.linkedin.com/in/aastha-bajaj-862a2225a"
+                  }
+                  instaLink={"https://www.instagram.com/vishal.20_/?hl=en"}
+                />
+              </Fade>
+
+              <Fade bottom>
+                <ProfileCard
+                  img={anshu}
+                  name={"Anshu Raj"}
+                  role={"Vice President"}
+                  linkedinLink={"https://www.linkedin.com/in/anshu-raj2006"}
+                  instaLink={"https://www.instagram.com/variatebruh/?hl=en"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={abhinn}
+                  name={"Abhinna Chaudhary"}
+                  role={"Secretary"}
+                  linkedinLink={
+                    "https://www.linkedin.com/in/abhinna-chaudhary-203a3a260"
+                  }
+                  instaLink={"https://www.instagram.com/atharvva_/?hl=en"}
+                />
+              </Fade>
+
+              <Fade bottom>
+                <ProfileCard
+                  img={umang}
+                  name={"Umang Jain"}
+                  role={"Treasurer"}
+                  linkedinLink={"https://www.linkedin.com/in/umangjain2003"}
+                  instaLink={"https://www.instagram.com/taneja.vansh/?hl=en"}
+                />
+              </Fade>
+            </div>
+
+            <div className="flex flex-col gap-4 sm:flex-row justify-center items-center md:w-[90%] mx-auto ">
+              <Fade bottom>
+                <ProfileCard
+                  img={tanisqa}
+                  name={"Tanishqa Giri"}
+                  role={"Startup Development Head"}
+                  linkedinLink={
+                    "https://www.linkedin.com/in/tanishqa-giri-b29a15260"
+                  }
+                  instaLink={"https://www.instagram.com/harsh.mnob/"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={shreeshant}
+                  name="Shreeshant Prasad"
+                  role="Technical Head"
+                  linkedinLink={
+                    "https://www.linkedin.com/in/shreeshant-prasad-1b1656297/"
+                  }
+                  instaLink={"https://www.instagram.com/srivastava4nishant/"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={ujjawal}
+                  name={"Ujjwal Saini"}
+                  role="Public Relations Head"
+                  linkedinLink={
+                    "https://www.linkedin.com/in/ujjwal-saini-8aa924258?"
+                  }
+                  instaLink={"https://www.instagram.com/avanyatyagiii/"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={amish}
+                  name={"Amish Roushan"}
+                  role="Digital Media & Promotions Head"
+                  linkedinLink={
+                    "https://www.linkedin.com/in/amish-roushan-0425662a3"
+                  }
+                  instaLink={"https://www.instagram.com/anshraj_world/"}
+                />
+              </Fade>
+            </div>
+            <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[90%] mx-auto">
+              <Fade bottom>
+                <ProfileCard
+                  img={shaivy}
+                  name={"Shaivy Patel"}
+                  role="Marketing Head"
+                  linkedinLink={
+                    "https://www.linkedin.com/in/shaivy-patel-2b97142a5"
+                  }
+                  instaLink={"https://www.instagram.com/aastha_prerna/"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={ankur}
+                  name={"Ankur Singh"}
+                  role={"Ambassador Head"}
+                  linkedinLink={
+                    "https://www.linkedin.com/in/ankur-singh-822386286"
+                  }
+                  instaLink={"https://www.instagram.com/ayush__gupta_._/"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={piyush}
+                  name={"Piyush"}
+                  role="Event Management Head"
+                  linkedinLink={
+                    "hhttps://www.linkedin.com/in/piyush-bhardwaj-2a6b98247"
+                  }
+                  instaLink={"https://www.instagram.com/abhiinnaa/"}
+                />
+              </Fade>
             </div>
           </div>
-
-          <div className="flex flex-col lg:gap-4 gap-10  sm:flex-row justify-around items-center md:w-[60%] mx-auto mb-40">
-            <Fade bottom>
-              <ProfileCard
-                img={memberVishal}
-                name={"Vishal Diavisine"}
-                role={"President"}
-                linkedinLink={"https://www.linkedin.com/in/vishal-diavisine-40a97a232/"}
-                instaLink={
-                  "https://www.instagram.com/vishal.20_/?hl=en"
-                }
-              />
-            </Fade>
-
-            <Fade bottom>
-              <ProfileCard
-                img={memberSaksham}
-                name={"Saksham Chawla"}
-                role={"Vice President"}
-                linkedinLink={
-                  "https://www.linkedin.com/in/22sc/"
-                }
-                instaLink={
-                  "https://www.instagram.com/variatebruh/?hl=en"
-                }
-              />
-            </Fade>
-            <Fade bottom>
-              <ProfileCard
-                img={memberAthrav}
-                name={"Atharva Srivastava"}
-                role={"Secretary"}
-                linkedinLink={
-                  "https://www.linkedin.com/in/atharva-srivastava-profile/"
-                }
-                instaLink={"https://www.instagram.com/atharvva_/?hl=en"}
-              />
-            </Fade>
-
-            <Fade bottom>
-              <ProfileCard
-                img={memberVansh}
-                name={"Vansh Taneja"}
-                role={"Treasurer"}
-                linkedinLink={"https://www.linkedin.com/in/vansh-taneja-0809381a0/"}
-                instaLink={
-                  "https://www.instagram.com/taneja.vansh/?hl=en"
-                }
-              />
-            </Fade>
-          </div>
-
-          <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[90%] mx-auto ">
-            <Fade bottom>
-              <ProfileCard
-                img={memberShivansh}
-                name={"Shivansh Srivastava"}
-                role={"Startup Development Head"}
-                linkedinLink={
-                  "https://www.linkedin.com/in/shivansh-srivastava-698405239/"
-                }
-                instaLink={"https://www.instagram.com/harsh.mnob/"}
-              />
-            </Fade>
-            <Fade bottom>
-              <ProfileCard
-                img={memberNishant}
-                name="Nishant Srivastava"
-                role="Technical Head"
-                linkedinLink={"https://www.linkedin.com/in/nishant-srivastava-/"}
-                instaLink={"https://www.instagram.com/srivastava4nishant/"}
-              />
-            </Fade>
-            <Fade bottom>
-              <ProfileCard
-                img={memberAvanya}
-                name={"Avanya Tyagi"}
-                role="Public Relations Head"
-                linkedinLink={
-                  "https://www.linkedin.com/in/avanyatyagi08/"
-                }
-                instaLink={
-                  "https://www.instagram.com/avanyatyagiii/"
-                }
-              />
-            </Fade>
-            <Fade bottom>
-              <ProfileCard
-                img={memberAnshu}
-                name={"Anshu Raj"}
-                role="Digital Media & Promotions Head"
-                linkedinLink={
-                  "https://www.linkedin.com/in/anshu-raj2006/"
-                }
-                instaLink={
-                  "https://www.instagram.com/anshraj_world/"
-                }
-              />
-            </Fade>
-          </div>
-          <div className="flex flex-col gap-4 sm:flex-row justify-around items-center md:w-[90%] mx-auto">
-            <Fade bottom>
-              <ProfileCard
-                img={memberAastha}
-                name={"Aastha Bajaj"}
-                role="Marketing Head"
-                linkedinLink={"https://www.linkedin.com/in/aastha-bajaj-862a2225a/"}
-                instaLink={"https://www.instagram.com/aastha_prerna/"}
-              />
-            </Fade>
-            <Fade bottom>
-              <ProfileCard
-                img={memberAyush}
-                name={"Ayush Gupta"}
-                role={"Ambassador Head"}
-                linkedinLink={
-                  "https://www.linkedin.com/in/guptaayush8218/"
-                }
-                instaLink={"https://www.instagram.com/ayush__gupta_._/"}
-              />
-            </Fade>
-            <Fade bottom>
-              <ProfileCard
-                img={memberAbhinna}
-                name={"Abhinna Chaudhary"}
-                role="Event Management Head"
-                linkedinLink={"https://www.instagram.com/abhiinnaa/"}
-                instaLink={"https://www.instagram.com/abhiinnaa/"}
-              />
-            </Fade>
-          </div>
         </div>
-      </div> */}
-      {/*Section-4 Ending*/}
-<div id="Contact">
-      <Footer />
+      }
+      Section-4 Ending
+      <div id="Contact">
+        <Footer />
       </div>
     </div>
   );

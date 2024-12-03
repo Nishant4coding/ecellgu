@@ -17,7 +17,7 @@ const ProfileCard = ({ img, width, name, role, linkedinLink, instaLink }) => {
           }
         />
 
-        <div className="hidden gap-1 customMedia absolute left-[100px] top-[300px] lg:left-[130px] lg:top-[210px] group-hover:flex">
+        <div className="hidden gap-1 customMedia absolute left-[100px] top-[30rem] lg:left-[130px] lg:top-[210px] group-hover:flex">
           {linkedinLink && (
             <a target="_blank" rel="noopener noreferrer" href={linkedinLink}>
               <img
