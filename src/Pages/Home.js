@@ -507,7 +507,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/aastha-bajaj-862a2225a"
                   }
-                  instaLink={"https://www.instagram.com/vishal.20_/?hl=en"}
+                  instaLink={"https://www.instagram.com/aastha_prerna/"}
                 />
               </Fade>
 
@@ -517,7 +517,7 @@ const Home = () => {
                   name={"Anshu Raj"}
                   role={"Vice President"}
                   linkedinLink={"https://www.linkedin.com/in/anshu-raj2006"}
-                  instaLink={"https://www.instagram.com/variatebruh/?hl=en"}
+                  instaLink={"https://www.instagram.com/tech_anshraj"}
                 />
               </Fade>
               <Fade bottom>
@@ -528,7 +528,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/abhinna-chaudhary-203a3a260"
                   }
-                  instaLink={"https://www.instagram.com/atharvva_/?hl=en"}
+                  instaLink={"https://www.instagram.com/abhiinnaa"}
                 />
               </Fade>
 
@@ -538,7 +538,7 @@ const Home = () => {
                   name={"Umang Jain"}
                   role={"Treasurer"}
                   linkedinLink={"https://www.linkedin.com/in/umangjain2003"}
-                  instaLink={"https://www.instagram.com/taneja.vansh/?hl=en"}
+                  instaLink={"https://www.instagram.com/iamumangjain/"}
                 />
               </Fade>
             </div>
@@ -552,7 +552,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/tanishqa-giri-b29a15260"
                   }
-                  instaLink={"https://www.instagram.com/harsh.mnob/"}
+                  instaLink={"https://www.instagram.com/pvt_tanishqa.g/"}
                 />
               </Fade>
               <Fade bottom>
@@ -574,7 +574,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/ujjwal-saini-8aa924258?"
                   }
-                  instaLink={"https://www.instagram.com/avanyatyagiii/"}
+                  instaLink={"https://www.instagram.com/lakshya_0044/"}
                 />
               </Fade>
               <Fade bottom>
@@ -585,7 +585,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/amish-roushan-0425662a3"
                   }
-                  instaLink={"https://www.instagram.com/anshraj_world/"}
+                  instaLink={"https://www.instagram.com/aphs_amiiish_24/"}
                 />
               </Fade>
             </div>
@@ -598,7 +598,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/shaivy-patel-2b97142a5"
                   }
-                  instaLink={"https://www.instagram.com/aastha_prerna/"}
+                  instaLink={"https://www.instagram.com/shhhhaivy/"}
                 />
               </Fade>
               <Fade bottom>
@@ -609,7 +609,7 @@ const Home = () => {
                   linkedinLink={
                     "https://www.linkedin.com/in/ankur-singh-822386286"
                   }
-                  instaLink={"https://www.instagram.com/ayush__gupta_._/"}
+                  instaLink={"https://www.instagram.com/oye_its_ankur/"}
                 />
               </Fade>
               <Fade bottom>
@@ -618,9 +618,20 @@ const Home = () => {
                   name={"Piyush"}
                   role="Event Management Head"
                   linkedinLink={
-                    "hhttps://www.linkedin.com/in/piyush-bhardwaj-2a6b98247"
+                    "https://www.linkedin.com/in/piyush-bhardwaj-2a6b98247"
                   }
-                  instaLink={"https://www.instagram.com/abhiinnaa/"}
+                  instaLink={"https://www.instagram.com/__piyushh____"}
+                />
+              </Fade>
+              <Fade bottom>
+                <ProfileCard
+                  img={piyush}
+                  name={"Karan"}
+                  role="Media Head"
+                  linkedinLink={
+                    "https://www.linkedin.com/in/karan-chauhan-0694a9256"
+                  }
+                  instaLink={"https://www.instagram.com/_karannn777"}
                 />
               </Fade>
             </div>
